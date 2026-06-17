@@ -129,38 +129,13 @@
                 기획되었습니다.
               </p>
             </div>
-            <div class="card">
-              <h3>
-                <i class="fa-solid fa-users-viewfinder"></i> 전사 주요 구현 기능
-              </h3>
-              <ul class="styled-list">
-                <li>
-                  <strong>인적관리(HR):</strong> 부서/직급 체계 수립, 출퇴근
-                  관리 및 급여 산정 대장 자동 빌드
-                </li>
-                <li>
-                  <strong>재무관리(Finance):</strong> 분개 자동 전표 생성 및
-                  차대변 계정 조회, 간이 재무제표 출력
-                </li>
-                <li>
-                  <strong>품질/매장관리(Stock):</strong> 본사 품목 데이터 통제,
-                  매장 발주 승인 및 반품 기안 처리
-                </li>
-                <li>
-                  <strong>전자결재(Approval):</strong> 휴가원/발주신청서 등
-                  결재선 지정 문서 작성 및 결재 승인
-                </li>
-              </ul>
-            </div>
           </div>
 
           <div class="card my-role-card">
             <div class="my-role-badge">MY ROLE</div>
-            <h3>
-              <i class="fa-solid fa-code"></i> 내가 담당한 핵심 기능 (김민성)
-            </h3>
+            <h3>내가 담당한 핵심 기능 (김민성)</h3>
             <p class="my-role-summary">
-              전사 시스템의 안전한 인증 환경과 사내 커뮤니케이션 인프라를 전담
+              계정 생성및 정보 수정과 사내 커뮤니케이션 인프라를 전담
               구축하였습니다.
             </p>
             <div class="role-grid">
@@ -169,7 +144,7 @@
                   ><i class="fa-solid fa-user-shield"></i
                 ></span>
                 <div class="role-text">
-                  <h4>사원 정보 및 인증 관리</h4>
+                  <h4>계정 관리</h4>
                   <p>
                     Multi-part File을 활용한 실시간 프로필 이미지 갱신 프로세스
                     및 AJAX 기반 정보 수정 API, 세션 관리 체계를 설계했습니다.
@@ -181,7 +156,7 @@
                   ><i class="fa-solid fa-shield-halved"></i
                 ></span>
                 <div class="role-text">
-                  <h4>부서별 권한제어 공지사항</h4>
+                  <h4>권한별 공지사항 작성</h4>
                   <p>
                     경영혁신실(종합 권한) 및 각 개별부서(인사, 재무, 품질)의
                     소속 부서별 작성 권한 검증 미들웨어 필터 및 TOP 공지사항
@@ -234,9 +209,9 @@
               <div class="tech-badges">
                 <span class="badge">Spring Boot</span>
                 <span class="badge">MyBatis</span>
-                <span class="badge">React</span>
-                <span class="badge">JPA</span>
                 <span class="badge">Lombok</span>
+                <span class="badge">JSP & JSTL</span>
+                <span class="badge">Spring Security</span>
               </div>
             </div>
             <div class="tech-card">
@@ -480,7 +455,7 @@ public int join(MemberVo vo , MultipartFile profile) throws IOException {
               <p>
                 사내 정보 공유의 정확성을 위해 부서 코드 기반의 글쓰기 권한 검증
                 장치를 추가하고, 높은 빈도로 조회되는 게시글을 최상단에 고정하는
-                고성능 리스트 쿼리를 설계했습니다.
+                리스트 쿼리를 설계했습니다.
               </p>
 
               <div class="feature-highlights">
