@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="개발자 김민성의 통합 포트폴리오 사이트입니다. 세미 프로젝트 '커피프린스 ERP'와 파이널 프로젝트 '모래묻은 키보드'를 소개합니다."
+    />
+    <title>김민성 | Backend Developer Portfolio</title>
+
+    <!-- Google Fonts & Pretendard -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- Background Elements for Premium Glow -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <div class="container">
+      <!-- Hero Section -->
+      <header class="hero-section">
+        <div class="profile-badge">
+          <span class="pulse-dot"></span> Available for Hire
+        </div>
+        <h1 class="hero-title">김민성 <span>Portfolio</span></h1>
+        <p class="hero-subtitle">Fullstack Developer</p>
+        <p class="hero-tagline">프로젝트 통합 포트폴리오</p>
+        <p class="hero-desc">
+          풀스택 개발자 과정을 통해 프론트엔드와 백엔드의 전반적인 웹 아키텍처를
+          이해하고,<br />
+          백엔드 비즈니스 로직 설계 및 시스템 개발에 깊은 강점을 둔 프로젝트
+          포트폴리오 허브입니다.
+        </p>
+      </header>
+
+      <!-- Main Dashboard Card Grid -->
+      <main class="portfolio-grid">
+        <!-- Card 1: Semi Project (Coffee Prince ERP) -->
+        <article class="project-card" data-tilt>
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="project-category category-semi">Semi Project</span>
+            <div class="project-icon-wrapper">
+              <i class="fa-solid fa-coffee"></i>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h2 class="project-title">커피프린스 ERP</h2>
+            <p class="project-short-desc">
+              사내 카페 운영 효율성을 극대화하기 위해 기획된 통합 웹 ERP 솔루션
+            </p>
+
+            <div class="project-details">
+              <div class="detail-section">
+                <h3 class="detail-title">
+                  <i class="fa-solid fa-layer-group"></i> 구현 기능
+                </h3>
+                <div class="tech-tags">
+                  <span class="tag">인사관리(HR)</span>
+                  <span class="tag">재고관리</span>
+                  <span class="tag">전자결재</span>
+                  <span class="tag">공지사항</span>
+                  <span class="tag">Q&A 게시판</span>
+                </div>
+              </div>
+
+              <div class="detail-section">
+                <h3 class="detail-title">
+                  <i class="fa-solid fa-user-gear"></i> 담당 업무 (My Role)
+                </h3>
+                <ul class="role-list">
+                  <li>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span
+                      ><strong>사원 인증 및 권한관리:</strong> BCrypt 암호화 및
+                      AJAX 기반 가입 프로세스 구축</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span
+                      ><strong>부서별 권한제어 공지:</strong> 미들웨어 레벨 부서
+                      권한 검증 및 상단 고정 쿼리 설계</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-comments"></i>
+                    <span
+                      ><strong>문의 및 답변(Q&A):</strong> 비밀글 모드 구현 및
+                      파일 교체 트랜잭션 동기화</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a href="./semi.html" class="btn btn-primary">
+              <span>세미 프로젝트 보기</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2: Final Project (Sandy Keyboard) -->
+        <article class="project-card" data-tilt>
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="project-category category-final">Final Project</span>
+            <div class="project-icon-wrapper">
+              <i class="fa-solid fa-keyboard"></i>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h2 class="project-title">모래묻은 키보드</h2>
+            <p class="project-short-desc">
+              사무용 인프라 조건 필터링 기능을 탑재한 워케이션 매칭 플랫폼
+            </p>
+
+            <div class="project-details">
+              <div class="detail-section">
+                <h3 class="detail-title">
+                  <i class="fa-solid fa-layer-group"></i> 구현 기능
+                </h3>
+                <div class="tech-tags">
+                  <span class="tag">장소 검색 & 지도</span>
+                  <span class="tag">예약 매칭</span>
+                  <span class="tag">Toss 결제</span>
+                  <span class="tag">환불 프로세스</span>
+                  <span class="tag">판매자 정산</span>
+                  <span class="tag">관리자 매출</span>
+                </div>
+              </div>
+
+              <div class="detail-section">
+                <h3 class="detail-title">
+                  <i class="fa-solid fa-user-gear"></i> 담당 업무 (My Role)
+                </h3>
+                <ul class="role-list">
+                  <li>
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span
+                      ><strong>예약 및 결제 시스템:</strong> Toss Payments
+                      백엔드 연동 및 중복 예약 방지 락</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <span
+                      ><strong>환불/정산 프로세스:</strong> 스케줄러 기반 정산
+                      배치 및 세금계산서 DTO 매핑</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span
+                      ><strong>AWS 배포 & CI/CD 인프라:</strong> EC2, RDS 가동
+                      및 GitHub Actions 자동화 환경</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a href="./sandykey.html" class="btn btn-primary">
+              <span>파이널 프로젝트 보기</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>
+          &copy; 2026 Kim Min Sung. All Rights Reserved. Designed with premium
+          Glassmorphism.
+        </p>
+      </footer>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="./index.js"></script>
+  </body>
+</html>
