@@ -46,17 +46,77 @@
         </div>
         <h1 class="hero-title">김민성 <span>Portfolio</span></h1>
         <p class="hero-subtitle">Fullstack Developer</p>
-        <p class="hero-tagline">프로젝트 통합 포트폴리오</p>
-        <p class="hero-desc">
-          풀스택 개발자 과정을 통해 프론트엔드와 백엔드의 전반적인 웹 아키텍처를
-          이해하고,<br />
-          백엔드 비즈니스 로직 설계 및 시스템 개발에 깊은 강점을 둔 프로젝트
-          포트폴리오 허브입니다.
+        <p class="hero-tagline">
+          한 가지 목표에 깊이 몰입 하는것을 좋아하는 개발자
         </p>
+        <p class="hero-desc">KH정보교육원 세미프로젝트 파이널 프로젝트</p>
       </header>
 
       <!-- Main Dashboard Card Grid -->
       <main class="portfolio-grid">
+        <!-- Card 2: Final Project (Sandy Keyboard) -->
+        <article class="project-card" data-tilt>
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="project-category category-final">Final Project</span>
+            <div class="project-icon-wrapper">
+              <i class="fa-solid fa-keyboard"></i>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h2 class="project-title">모래묻은 키보드</h2>
+            <p class="project-short-desc">
+              사무용 인프라 조건 필터링 기능을 탑재한 워케이션 매칭 플랫폼
+            </p>
+
+            <div class="project-details">
+              <div class="detail-section">
+                <h3 class="detail-title">구현 기능</h3>
+                <div class="tech-tags">
+                  <span class="tag">장소 검색 & 지도</span>
+                  <span class="tag">예약 매칭</span>
+                  <span class="tag">Toss 결제</span>
+                  <span class="tag">환불 프로세스</span>
+                  <span class="tag">판매자 정산</span>
+                  <span class="tag">관리자 매출</span>
+                </div>
+              </div>
+
+              <div class="detail-section">
+                <h3 class="detail-title">담당 업무</h3>
+                <ul class="role-list">
+                  <li>
+                    <span
+                      ><strong>예약 및 결제 시스템:</strong> Toss Payments
+                      백엔드 연동 및 중복 예약 방지 락</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      ><strong>환불/정산 프로세스:</strong> 스케줄러 기반 정산
+                      배치 및 세금계산서 DTO 매핑</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      ><strong>AWS 배포 & CI/CD 인프라:</strong> EC2, RDS 가동
+                      및 GitHub Actions 자동화 환경</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a href="./sandykey.html" class="btn btn-primary">
+              <span>파이널 프로젝트 보기</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
         <!-- Card 1: Semi Project (Coffee Prince ERP) -->
         <article class="project-card" data-tilt>
           <div class="card-glow"></div>
@@ -76,9 +136,7 @@
 
             <div class="project-details">
               <div class="detail-section">
-                <h3 class="detail-title">
-                  <i class="fa-solid fa-layer-group"></i> 구현 기능
-                </h3>
+                <h3 class="detail-title">구현 기능</h3>
                 <div class="tech-tags">
                   <span class="tag">인사관리(HR)</span>
                   <span class="tag">재고관리</span>
@@ -89,26 +147,21 @@
               </div>
 
               <div class="detail-section">
-                <h3 class="detail-title">
-                  <i class="fa-solid fa-user-gear"></i> 담당 업무 (My Role)
-                </h3>
+                <h3 class="detail-title">담당 업무</h3>
                 <ul class="role-list">
                   <li>
-                    <i class="fa-solid fa-shield-halved"></i>
                     <span
                       ><strong>계정 생성 및 정보수정:</strong> BCrypt 암호화 및
                       AJAX 기반 가입 프로세스 구축</span
                     >
                   </li>
                   <li>
-                    <i class="fa-solid fa-bullhorn"></i>
                     <span
                       ><strong>권한별 공지사항 작성:</strong> 미들웨어 레벨 부서
                       권한 검증 및 상단 고정 쿼리 설계</span
                     >
                   </li>
                   <li>
-                    <i class="fa-solid fa-comments"></i>
                     <span
                       ><strong>문의 및 답변(Q&A):</strong> 비밀글 모드 구현 및
                       파일 교체 트랜잭션 동기화</span
@@ -122,76 +175,6 @@
           <div class="card-footer">
             <a href="./semi.html" class="btn btn-primary">
               <span>세미 프로젝트 보기</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-        </article>
-
-        <!-- Card 2: Final Project (Sandy Keyboard) -->
-        <article class="project-card" data-tilt>
-          <div class="card-glow"></div>
-          <div class="card-header">
-            <span class="project-category category-final">Final Project</span>
-            <div class="project-icon-wrapper">
-              <i class="fa-solid fa-keyboard"></i>
-            </div>
-          </div>
-
-          <div class="card-body">
-            <h2 class="project-title">모래묻은 키보드</h2>
-            <p class="project-short-desc">
-              사무용 인프라 조건 필터링 기능을 탑재한 워케이션 매칭 플랫폼
-            </p>
-
-            <div class="project-details">
-              <div class="detail-section">
-                <h3 class="detail-title">
-                  <i class="fa-solid fa-layer-group"></i> 구현 기능
-                </h3>
-                <div class="tech-tags">
-                  <span class="tag">장소 검색 & 지도</span>
-                  <span class="tag">예약 매칭</span>
-                  <span class="tag">Toss 결제</span>
-                  <span class="tag">환불 프로세스</span>
-                  <span class="tag">판매자 정산</span>
-                  <span class="tag">관리자 매출</span>
-                </div>
-              </div>
-
-              <div class="detail-section">
-                <h3 class="detail-title">
-                  <i class="fa-solid fa-user-gear"></i> 담당 업무 (My Role)
-                </h3>
-                <ul class="role-list">
-                  <li>
-                    <i class="fa-solid fa-calendar-check"></i>
-                    <span
-                      ><strong>예약 및 결제 시스템:</strong> Toss Payments
-                      백엔드 연동 및 중복 예약 방지 락</span
-                    >
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-rotate-left"></i>
-                    <span
-                      ><strong>환불/정산 프로세스:</strong> 스케줄러 기반 정산
-                      배치 및 세금계산서 DTO 매핑</span
-                    >
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <span
-                      ><strong>AWS 배포 & CI/CD 인프라:</strong> EC2, RDS 가동
-                      및 GitHub Actions 자동화 환경</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="./sandykey.html" class="btn btn-primary">
-              <span>파이널 프로젝트 보기</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
