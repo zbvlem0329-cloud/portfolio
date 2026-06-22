@@ -71,10 +71,10 @@
             class="nav-item nav-troubleshoot"
             data-section="troubleshooting"
           >
-            <i class="fa-solid fa-screwdriver-wrench"></i> 회고 및 트러블슈팅
+            <i class="fa-solid fa-screwdriver-wrench"></i> 트러블슈팅
           </a>
           <a href="#takeaways" class="nav-item" data-section="takeaways">
-            <i class="fa-solid fa-lightbulb"></i> 회고 & 배운 점
+            <i class="fa-solid fa-lightbulb"></i> 회고
           </a>
         </nav>
 
@@ -88,43 +88,60 @@
       <main class="main-content">
         <!-- System Status Header -->
         <header class="status-header">
-          <div class="card-footer" style="display: flex; gap: 8px; align-items: center;">
-            <a href="./sandykey.html" class="btn btn-primary" style="
-              text-decoration: none;
-              display: inline-flex;
-              align-items: center;
-              gap: 6px;
-              padding: 8px 16px;
-              border-radius: 8px;
-              font-size: 13px;
-              font-weight: 600;
-              background-color: var(--primary-color);
-              color: #ffffff;
-              border: 1px solid var(--primary-color);
-              transition: all 0.2s;
-            "
-            onmouseover="this.style.backgroundColor='var(--primary-hover)'; this.style.borderColor='var(--primary-hover)';"
-            onmouseout="this.style.backgroundColor='var(--primary-color)'; this.style.borderColor='var(--primary-color)';"
+          <div
+            class="card-footer"
+            style="display: flex; gap: 8px; align-items: center"
+          >
+            <a
+              href="./sandykey.html"
+              class="btn btn-primary"
+              style="
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 8px 16px;
+                border-radius: 8px;
+                font-size: 13px;
+                font-weight: 600;
+                background-color: var(--primary-color);
+                color: #ffffff;
+                border: 1px solid var(--primary-color);
+                transition: all 0.2s;
+              "
+              onmouseover="
+                this.style.backgroundColor = 'var(--primary-hover)';
+                this.style.borderColor = 'var(--primary-hover)';
+              "
+              onmouseout="
+                this.style.backgroundColor = 'var(--primary-color)';
+                this.style.borderColor = 'var(--primary-color)';
+              "
             >
               <span>파이널 프로젝트 보기</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="./index.html" class="btn btn-secondary" style="
-              text-decoration: none;
-              display: inline-flex;
-              align-items: center;
-              gap: 6px;
-              padding: 8px 16px;
-              border-radius: 8px;
-              font-size: 13px;
-              font-weight: 600;
-              background-color: transparent;
-              color: var(--primary-color);
-              border: 1px solid var(--border-color);
-              transition: all 0.2s;
-            "
-            onmouseover="this.style.backgroundColor='rgba(114, 73, 48, 0.05)';"
-            onmouseout="this.style.backgroundColor='transparent';"
+            <a
+              href="./index.html"
+              class="btn btn-secondary"
+              style="
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 8px 16px;
+                border-radius: 8px;
+                font-size: 13px;
+                font-weight: 600;
+                background-color: transparent;
+                color: var(--primary-color);
+                border: 1px solid var(--border-color);
+                transition: all 0.2s;
+              "
+              onmouseover="
+                this.style.backgroundColor = 'rgba(114, 73, 48, 0.05)'
+              "
+              onmouseout="this.style.backgroundColor = 'transparent'"
             >
               <i class="fa-solid fa-house"></i>
               <span>메인 홈으로</span>
@@ -823,7 +840,7 @@ public int insert(AnswerVo vo, List&lt;MultipartFile&gt; fList) {
         <!-- 6. Troubleshooting -->
         <section id="troubleshooting" class="content-section">
           <h2 class="section-title">
-            <i class="fa-solid fa-screwdriver-wrench"></i> 회고 및 트러블슈팅
+            <i class="fa-solid fa-screwdriver-wrench"></i> 트러블슈팅
           </h2>
 
           <!-- 1. 첫 번째 에피소드: 정적 리소스 캐싱으로 인한 프로필 이미지 실시간 미반영 문제 -->
