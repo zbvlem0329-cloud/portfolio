@@ -126,6 +126,26 @@ body {
     box-shadow: var(--shadow-sm);
 }
 
+.nav-item.nav-troubleshoot {
+    border: 1px dashed rgba(229, 213, 192, 0.35);
+    background-color: rgba(255, 255, 255, 0.03);
+    margin-top: 0.5rem;
+}
+
+.nav-item.nav-troubleshoot i {
+    color: #f59e0b; /* Amber icon */
+}
+
+.nav-item.nav-troubleshoot:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav-item.nav-troubleshoot.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
 .sidebar-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 1.5rem;
