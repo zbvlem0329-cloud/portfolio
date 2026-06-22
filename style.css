@@ -414,28 +414,62 @@ body {
     color: var(--text-muted);
 }
 
-/* Tech Stack Grid */
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.5rem;
-}
-
-.tech-card {
+/* Tech Stack Styling (Unified Card) */
+.tech-card-unified {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1.5rem;
+    border-radius: 16px;
+    padding: 2.5rem;
     box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
-.tech-card h4 {
+.tech-card-unified:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.tech-group {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(114, 73, 48, 0.08);
+}
+
+.tech-group:first-child {
+    padding-top: 0;
+}
+
+.tech-group:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.tech-group:hover .tech-label i {
+    transform: scale(1.15);
+    color: var(--primary-hover);
+}
+
+.tech-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-size: 1.05rem;
     font-weight: 700;
     color: var(--bg-dark);
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+}
+
+.tech-label i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    width: 24px;
+    text-align: center;
+    transition: transform var(--transition-fast), color var(--transition-fast);
 }
 
 .tech-badges {
@@ -455,10 +489,24 @@ body {
     align-items: center;
     gap: 0.35rem;
     border: 1px solid rgba(114, 73, 48, 0.15);
+    transition: all var(--transition-fast);
 }
 
 .badge i {
     color: var(--primary-color);
+    transition: color var(--transition-fast);
+}
+
+.badge:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(114, 73, 48, 0.15);
+}
+
+.badge:hover i {
+    color: #ffffff;
 }
 
 /* Feature Header */
@@ -816,5 +864,20 @@ body {
     
     .hero-content h1 {
         font-size: 2rem;
+    }
+    
+    .tech-card-unified {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .tech-group {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1rem 0;
+    }
+    
+    .tech-group:first-child {
+        padding-top: 0;
     }
 }
